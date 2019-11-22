@@ -1,12 +1,19 @@
 <template>
-  <div>
-    <div>
-      <p>Vue.js counter:「{{ counter }}」</p>
+  <div class="margin-10">
+    <div class="margin-10">
+      <p>Vue.js counter:「 {{ counter }} 」</p>
       <button @click="increment">increment</button>
     </div>
-    <div v-html="html" />
+    <hr />
+    <div class="margin-10" v-html="html" />
   </div>
 </template>
+
+<style scoped>
+.margin-10 {
+  margin: 10px;
+}
+</style>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'

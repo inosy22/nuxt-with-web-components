@@ -6,12 +6,14 @@ class Counter extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'closed' })
     shadowRoot.innerHTML = `
         <div>
-            <p>
-                <span>Web Components counter: 「</span>
-                <span id="counter"></span>
-                <span>」</span>
-            </p>
+          <div>
+            <div><span>Web Components counter: 「</span>
+            <span id="counter"></span>
+            <span>」</span>
+          </div>
+          <div>
             <button id="increment">increment</button>
+          </div>
         </div>
         `
     shadowRoot.querySelector('#counter').innerHTML = globalCounter
